@@ -46,7 +46,7 @@ export function Header() {
             height="40"
           />
           <span className="text-xs md:text-base hidden sm:block text-white">
-            GUB exitPoll
+            GUB 2024 Exit Polls
           </span>
         </Link>
 

@@ -37,14 +37,15 @@ export function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm sm:text-center text-white">
-            © 2024{" "}
             <a
-              href="/"
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&"
               className="hover:underline"
             >
-              Just a fun website
+              To contact the creator, please click here
             </a>
-            . All Rights Reserved.
+            <br />
+            © 2024{" "}
+            All Rights Reserved.
           </span>
         </div>
       </div>

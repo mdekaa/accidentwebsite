@@ -4,12 +4,14 @@ import { Button } from "@/components/ui/button";
 import { useSession } from "@/lib/utils";
 import { SignIn, useSignIn } from "@clerk/clerk-react";
 import { SignInButton } from "@clerk/nextjs";
+import { TimerContainer } from "./Timer/Timer";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   const { isAuthenticated, isLoading } = useSession();
   const signIn = useSignIn();
+  const targetDate = new Date("2024-08-03T10:00:00");
 
   return (
     <main className="">
@@ -21,12 +23,6 @@ export default function Home() {
           alt="hero banner"
           className="rounded-xl"
         />
-        <h1 className="text-center max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-            TIMER GOES HERE
-        </h1>
-        <p className="text-center text-gray-700 dark:text-gray-300 text-xl max-w-lg mx-auto">
-          some funny line!
-        </p>
         {!isLoading &&
           (isAuthenticated ? (
             <Button asChild>
@@ -37,6 +33,14 @@ export default function Home() {
               <Button>Sign In to Vote</Button>
             </SignInButton>
           ))}
+        <h1 className="text-center max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+            COUNTDOWN
+        </h1>
+        <TimerContainer targetDate={targetDate}/>
+
+        <p className="text-center text-gray-700 dark:text-gray-300 text-xl max-w-lg mx-auto">
+          Jab media karti hai, toh hum kyu na kare?
+        </p>
       </section>
     </main>
   );
