@@ -42,7 +42,7 @@ export default function Home() {
         <p>
           <b className="text-red-500 text-xl">This is a virtual opinion poll to know about the mood of institute.
             <br />
-            It doesn't resemble or influence actual elections in any direct or indirect way. Any connection are purely coincidental.</b>
+            It doesnt resemble or influence actual elections in any direct or indirect way. Any connection are purely coincidental.</b>
         </p>
       </section>
     </main>
