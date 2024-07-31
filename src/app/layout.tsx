@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Footer } from "./footer";
 import NextTopLoader from "nextjs-toploader";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react"
 
 const montserrat = Montserrat({
   weight: '400',
