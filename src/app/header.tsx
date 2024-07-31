@@ -54,7 +54,7 @@ export function Header() {
           {!isLoading && isAuthenticated && (
             <>
               <Link href="/showdown" className="link">
-                Candidates
+                CandidatesShowdown
               </Link>
               <Link href="/user" className="link">
                 User
@@ -62,7 +62,6 @@ export function Header() {
             </>
           )}
         </div>
-        
 
         <div className="flex gap-4 items-center">
           {!isLoading && (
@@ -75,8 +74,6 @@ export function Header() {
               {!isAuthenticated && <SignInButton />}
             </>
           )}
-
-         
 
           <MenuToggle toggle={toggleOpen} />
         </div>
