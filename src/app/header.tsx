@@ -60,6 +60,9 @@ export function Header() {
               <Link href="/showdown" className="link">
                 CandidatesShowdown
               </Link>
+              <Link href="/user" className="link">
+                User
+              </Link>
              
             </>
           )}
@@ -70,6 +73,7 @@ export function Header() {
             Agendas
           </Link>
         </div>
+        
 
         <div className="flex gap-4 items-center">
           {!isLoading && (
