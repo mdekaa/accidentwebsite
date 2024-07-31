@@ -12,7 +12,7 @@ export function Footer() {
               className="flex items-center"
             >
               <span className="hidden md:block self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                GUB Exit Poll
+                GUB Entrance Poll
               </span>
             </Link>
           </div>
