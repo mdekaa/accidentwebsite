@@ -29,6 +29,7 @@ export default function RootLayout({
       
 
       <body className={montserrat.className}>
+        <Analytics/>
         <Providers>
           <NextTopLoader />
           <Header />
