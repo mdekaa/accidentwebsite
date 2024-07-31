@@ -55,7 +55,9 @@ export default function ExplorePage() {
 
   return (
     <div className="">
-      <h1 className="text-center text-4xl font-bold mb-12">Vote for your Candidate</h1>
+      <h1 className="text-center text-4xl font-bold mb-12">
+        Vote for your Candidate
+      </h1>
 
       {isLoading && (
         <div className="animate-pulse mb-12 mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pb-40">
@@ -98,14 +100,15 @@ export default function ExplorePage() {
                           <TrashIcon />
                         </Button>
                       )}
-                      <p className="text-xl text-white font-bold pr-3 pb-2 pt-2 pl-3 mb-3 border rounded bg-gradient-to-r from-slate-900 to-slate-700">{thumbnail.title}</p>
+                      <p className="text-xl text-white font-bold pr-3 pb-2 pt-2 pl-3 mb-3 border rounded bg-gradient-to-r from-slate-900 to-slate-700">
+                        {thumbnail.title}
+                      </p>
                       <div className="relative aspect-[1280/720]">
-                        
                         {thumbnail.urls[0] && (
                           <Image
                             alt="image test"
                             className="object-contain"
-                            src={thumbnail.urls[0]}
+                            src="/modi.webp"
                             layout="fill"
                           />
                         )}
@@ -136,12 +139,14 @@ export default function ExplorePage() {
                       </div>
                       <p className="text-white text-md">{thumbnail.title}</p>
 
-                      <p className="text-white">votes: {getTotalVotes(thumbnail)}</p>
+                      <p className="text-white">
+                        votes: {getTotalVotes(thumbnail)}
+                      </p>
                       <p className="text-white">1M Views</p>
                     </CardContent>
                   </div>
 
-                  <CardFooter >
+                  <CardFooter>
                     <Button
                       variant={hasVoted(thumbnail) ? "outline" : "default"}
                       className="w-full"
