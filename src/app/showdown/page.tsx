@@ -100,7 +100,7 @@ export default function ExplorePage() {
                           <TrashIcon />
                         </Button>
                       )}
-                      <p className="text-xl text-white font-bold pr-3 pb-2 pt-2 pl-3 mb-3 border rounded bg-gradient-to-r from-slate-900 to-slate-700">
+                      <p className="text-xl text-white text-center font-bold pr-3 pb-2 pt-2 pl-3 mb-3 border rounded bg-gradient-to-r from-slate-900 to-slate-700">
                         {thumbnail.title}
                       </p>
                       <div className="relative aspect-[1280/720]">
@@ -114,8 +114,8 @@ export default function ExplorePage() {
                         )}
                       </div>
                     </CardHeader>
-                    <CardContent>
-                      <div className="text-white flex gap-4 items-center mb-2">
+                    <CardContent className="text-center">
+                      {/* <div className="text-white flex gap-4 items-center mb-2">
                         <Link href={`/profile/${thumbnail.userId}`}>
                           <Avatar>
                             <AvatarImage src={thumbnail.profileImage} />
@@ -136,13 +136,13 @@ export default function ExplorePage() {
                             )}
                           </p>
                         </div>
-                      </div>
+                      </div> */}
                       <p className="text-white text-md">{thumbnail.title}</p>
 
                       <p className="text-white">
-                        votes: {getTotalVotes(thumbnail)}
+                        Votes casted: {getTotalVotes(thumbnail)}
                       </p>
-                      <p className="text-white">1M Views</p>
+                      {/* <p className="text-white">1M Views</p> */}
                     </CardContent>
                   </div>
 

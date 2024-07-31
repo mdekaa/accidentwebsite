@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useMutation, useQuery } from "convex/react";
 import { useParams } from "next/navigation";
 import { api } from "../../../../convex/_generated/api";
@@ -104,18 +104,14 @@ function ThumbnailTestImage({
             {thumbnail.title}
           </div>
           <div className="border rounded mr-10 w-70 p-5 mb-3 mt-3 bg-gradient-to-r from-slate-900 to-slate-700">
-            <p className="text-white">Description: {description}</p>
+            <p className="text-white">{description}</p>
           </div>
           <div className="flex text-white">
-            <div>1M Views</div>
-            <DotIcon />
-            {formatDistance(
-              new Date(thumbnail._creationTime),
-              new Date(),
-              {
-                addSuffix: true,
-              }
-            )}
+            <div>Every vote counts</div>
+            {/* <DotIcon /> */}
+            {/* {formatDistance(new Date(thumbnail._creationTime), new Date(), {
+              addSuffix: true,
+            })} */}
           </div>
         </div>
       </div>
@@ -158,9 +154,7 @@ export default function ThumbnailPage() {
   }
 
   const isOwner = user?._id === thumbnail.userId;
-  const hasVoted = Boolean(
-    user && thumbnail.voteIds.includes(user._id)
-  );
+  const hasVoted = Boolean(user && thumbnail.voteIds.includes(user._id));
 
   const sortedImages = thumbnail.images
     .map((image) => image)
