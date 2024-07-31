@@ -92,13 +92,13 @@ function ThumbnailTestImage({
         </div>
       )}
 
-      <div className="flex gap-4">
-        <Link href={`/profile/${thumbnail.userId}`}>
+      <div className="flex justify-center items-center text-center gap-4">
+        {/* <Link href={`/profile/${thumbnail.userId}`}>
           <Avatar>
             <AvatarImage src={thumbnail?.profileImage} />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-        </Link>
+        </Link> */}
         <div className="flex flex-col dark:text-gray-300 text-gray-700">
           <div className="font-bold mb-2 text-gray-900 dark:text-white">
             {thumbnail.title}
@@ -168,16 +168,13 @@ export default function ThumbnailPage() {
     <div className="gap-12 flex flex-col">
       <div className="flex items-center justify-center gap-2">
         Uploaded by
-        <Link
-          href={`/profile/${thumbnail.userId}`}
-          className="dark:text-gray-300 dark:hover:text-gray-100 hover:text-gray-700 text-gray-900 flex items-center justify-center gap-2"
-        >
-          <Avatar className="w-8 h-8">
+        <p className="dark:text-gray-300 dark:hover:text-gray-100 hover:text-gray-700 text-gray-900 flex items-center justify-center gap-2">
+          {/* <Avatar className="w-8 h-8">
             <AvatarImage src={thumbnail?.profileImage} />
             <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
-          <h1>{thumbnail.name}</h1>
-        </Link>
+          </Avatar> */}
+          <h1>Election Cummission of NITS</h1>
+        </p>
       </div>
 
       <Tabs defaultValue="grid" className="">
