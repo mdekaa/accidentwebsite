@@ -55,60 +55,19 @@ export default function MobileNav({
         variants={variants}
         className="absolute inset-0 grid w-full gap-3 py-16 z-50 "
       >
-        <div className="dark:text-white text-black flex flex-col items-center">
-          <MenuItem className="my-3 h-px w-full bg-gray-300" />
-          <MenuItem key="Dashboard">
-            <Link
-              href="/yourpoll"
-              onClick={() => toggleOpen()}
-              className="flex w-full font-semibold capitalize"
-            >
-              Your Poll
-            </Link>
-          </MenuItem>
-          <MenuItem className="my-3 h-px w-full bg-gray-300" />
-          <MenuItem key="Create">
-            <Link
-              href="/create"
-              onClick={() => toggleOpen()}
-              className="flex w-full font-semibold capitalize"
-            >
-              Create
-            </Link>
-          </MenuItem>
-          <MenuItem className="my-3 h-px w-full bg-gray-300" />
+        <div className="dark:text-white text-black flex flex-col items-center mt-2">
+          
           <MenuItem key="Explore">
             <Link
               href="/showdown"
               onClick={() => toggleOpen()}
-              className="flex w-full font-semibold capitalize"
+              className="flex w-full font-semibold capitalize mt-1"
             >
-              LoserShowdown
+              CandidatesShowdown
             </Link>
           </MenuItem>
           <MenuItem className="my-3 h-px w-full bg-gray-300" />
 
-          <MenuItem key="Following">
-            <Link
-              href="/following"
-              onClick={() => toggleOpen()}
-              className="flex w-full font-semibold capitalize"
-            >
-              Following
-            </Link>
-          </MenuItem>
-          <MenuItem className="my-3 h-px w-full bg-gray-300" />
-
-          <MenuItem key="Account">
-            <Link
-              href="/user"
-              onClick={() => toggleOpen()}
-              className="flex w-full font-semibold capitalize"
-            >
-              Profile
-            </Link>
-          </MenuItem>
-          <MenuItem className="my-3 h-px w-full bg-gray-300" />
 
           <MenuItem key="SignOut">
             <Link
