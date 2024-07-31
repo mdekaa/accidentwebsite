@@ -138,16 +138,6 @@ function ThumbnailTestImage({
             className="w-full bg-gray-200"
           />
           <div className="text-lg">{getVotesFor(thumbnail, imageId)} votes</div>
-          {!isOwner && (
-            <Button
-              onClick={() => handleUnvote(imageId)}
-              size="lg"
-              className="w-fit self-center mt-2"
-              disabled={selectedImageId !== imageId}
-            >
-              Unvote
-            </Button>
-          )}
         </>
       )}
     </div>
