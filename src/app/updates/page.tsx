@@ -17,7 +17,7 @@ export default async function RoadmapPage() {
     <div className="container max-w-5xl mx-auto">
       <div className="flex flex-row justify-between mb-8">
         <h1 className="my-12 text-[28px] leading-[34px] tracking-[-0.416px] text-neutral-12 font-bold">
-          About the Candidates
+          Candidate Agendas
         </h1>
       </div>
 
