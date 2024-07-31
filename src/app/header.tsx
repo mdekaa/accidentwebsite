@@ -46,32 +46,21 @@ export function Header() {
             height="40"
           />
           <span className="text-xs md:text-base hidden sm:block text-white">
-            GUB 2024 Exit Polls
+            GUB 2024 Entrance Polls
           </span>
         </Link>
 
         <div className="gap-4 hidden md:flex md:gap-8 text-xs md:text-base">
           {!isLoading && isAuthenticated && (
             <>
-              
-              <Link href="/create" className="link">
-                CreatePoll
-              </Link>
               <Link href="/showdown" className="link">
-                CandidatesShowdown
+                Candidates
               </Link>
               <Link href="/user" className="link">
                 User
               </Link>
-             
             </>
           )}
-
-          
-
-          <Link href="/updates" className="link">
-            Agendas
-          </Link>
         </div>
         
 
@@ -80,16 +69,6 @@ export function Header() {
             <>
               {isAuthenticated && (
                 <>
-                  <Feedback
-                    triggerContent={
-                      <button>
-                        <MessageCircleHeart />
-                      </button>
-                    }
-                  />
-
-                  <NotificationIcon />
-
                   <UserButton />
                 </>
               )}

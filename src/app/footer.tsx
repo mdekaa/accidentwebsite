@@ -25,7 +25,7 @@ export function Footer() {
               </h2>
               <ul className="text-white font-medium flex flex-col gap-4">
                 <li>
-                  <Link href="/privacy-policy" className="hover:underline">
+                  <Link href="https://www.youtube.com/watch?v=xdqlN4d0sc0" className="hover:underline">
                     Privacy Policy
                   </Link>
                 </li>

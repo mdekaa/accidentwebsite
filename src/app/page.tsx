@@ -36,6 +36,12 @@ export default function Home() {
         <h1 className="text-center max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
             COUNTDOWN
         </h1>
+        <p>
+          <b className="text-red-500 text-xl">Note: This is a virtual entrance poll only and is not the official elections of GUB 2024.</b>
+          <br />
+          Cast your valuable vote
+          on 3rd August 2024
+        </p>
         <TimerContainer targetDate={targetDate}/>
 
         <p className="text-center text-gray-700 dark:text-gray-300 text-xl max-w-lg mx-auto">

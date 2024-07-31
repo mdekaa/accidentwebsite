@@ -14,8 +14,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "LoserLeague",
-  description: "Which one is the loser ?",
+  title: "GUB Entrance Polls",
+  description: "Yes you heard it right!",
 };
 
 export default function RootLayout({
