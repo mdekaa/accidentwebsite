@@ -22,19 +22,19 @@ export default function Home() {
           className="rounded-xl"
         />
         <h1 className="text-center max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-          
+            TIMER GOES HERE
         </h1>
         <p className="text-center text-gray-700 dark:text-gray-300 text-xl max-w-lg mx-auto">
-          Where choosing the worst is the best decision you will make all day!
+          some funny line!
         </p>
         {!isLoading &&
           (isAuthenticated ? (
             <Button asChild>
-              <Link href="/create">Create LoserPoll</Link>
+              <Link href="/showdown">Vote</Link>
             </Button>
           ) : (
             <SignInButton>
-              <Button>Sign In to Get Started</Button>
+              <Button>Sign In to Vote</Button>
             </SignInButton>
           ))}
       </section>

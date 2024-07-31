@@ -46,35 +46,28 @@ export function Header() {
             height="40"
           />
           <span className="text-xs md:text-base hidden sm:block text-white">
-            LoserLeague
+            GUB exitPoll
           </span>
         </Link>
 
         <div className="gap-4 hidden md:flex md:gap-8 text-xs md:text-base">
           {!isLoading && isAuthenticated && (
             <>
-              <Link href="/yourpoll" className="link">
-                YourPolls
-              </Link>
+              
               <Link href="/create" className="link">
                 CreatePoll
               </Link>
               <Link href="/showdown" className="link">
-                LoserShowdown
+                CandidatesShowdown
               </Link>
-              <Link href="/following" className="link">
-                Following
-              </Link>
-              <Link href="/user" className="link">
-                User
-              </Link>
+             
             </>
           )}
 
           
 
           <Link href="/updates" className="link">
-            Updates
+            All the Candidates
           </Link>
         </div>
 

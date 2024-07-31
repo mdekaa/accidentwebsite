@@ -27,7 +27,7 @@
     "@xixixao/uploadstuff": "^0.0.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
-    "convex": "^1.7.1",
+    "convex": "^1.13.2",
     "convex-helpers": "^0.1.14",
     "date-fns": "^3.6.0",
     "framer-motion": "^11.0.3",

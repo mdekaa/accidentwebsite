@@ -51,7 +51,7 @@ export default function Feedback({ triggerContent }: FeedbackProps) {
   const { isMobile } = useMediaQuery();
 
   const description =
-    "We value your feedback. How can we improve your experience?";
+    "Message to the creator of the website?";
 
   if (isMobile) {
     return (
@@ -59,7 +59,7 @@ export default function Feedback({ triggerContent }: FeedbackProps) {
         <DrawerTrigger asChild>{triggerContent}</DrawerTrigger>
         <DrawerContent>
           <DrawerHeader className="text-left">
-            <DrawerTitle>Feedback</DrawerTitle>
+            <DrawerTitle>Message</DrawerTitle>
             <DrawerDescription>{description}</DrawerDescription>
           </DrawerHeader>
           <FeedbackForm setOpen={setOpen} />
@@ -78,7 +78,7 @@ export default function Feedback({ triggerContent }: FeedbackProps) {
       <DialogTrigger asChild>{triggerContent}</DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Feedback</DialogTitle>
+          <DialogTitle>Message</DialogTitle>
           <DialogDescription>{description}</DialogDescription>
         </DialogHeader>
         <FeedbackForm setOpen={setOpen} />
@@ -115,8 +115,8 @@ export function FeedbackForm({ setOpen }: FeedbackFormProps) {
       });
       setOpen(false);
       toast({
-        title: "Feedback submitted",
-        description: "Thank you for your feedback",
+        title: "message submitted",
+        description: "Thank you for your message",
       });
     } catch (error) {
       console.error("Failed to send feedback:", error);
@@ -145,7 +145,7 @@ export function FeedbackForm({ setOpen }: FeedbackFormProps) {
       </div>
       <div className="grid gap-2">
         <Label htmlFor="feedback">
-          Your feedback <span className="text-red-600">*</span>
+          Your message <span className="text-red-600">*</span>
         </Label>
         <Controller
           name="feedback"

@@ -1,2 +1,1 @@
-- ability to delete an account (clerk webhooks)
-- stripe subscription to allow creating thumbnails
+
