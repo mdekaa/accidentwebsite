@@ -67,7 +67,7 @@ export function Header() {
           
 
           <Link href="/updates" className="link">
-            All the Candidates
+            Agendas
           </Link>
         </div>
 
