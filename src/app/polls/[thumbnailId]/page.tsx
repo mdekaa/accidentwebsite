@@ -173,7 +173,7 @@ export default function ThumbnailPage() {
             <AvatarImage src={thumbnail?.profileImage} />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar> */}
-          <h1>Election Cummission of NITS</h1>
+          <h1>Election Cummission of Developers</h1>
         </p>
       </div>
 
