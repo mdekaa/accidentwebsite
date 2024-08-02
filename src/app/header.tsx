@@ -51,30 +51,16 @@ export function Header() {
         </Link>
 
         <div className="gap-4 hidden md:flex md:gap-8 text-xs md:text-base">
-          {!isLoading && isAuthenticated && (
+          {!isLoading&& (
             <>
               <Link href="/showdown" className="link">
-                CandidatesShowdown
-              </Link>
-              <Link href="/user" className="link">
-                User
+                Opinion Polls Result
               </Link>
             </>
           )}
         </div>
 
         <div className="flex gap-4 items-center">
-          {!isLoading && (
-            <>
-              {isAuthenticated && (
-                <>
-                  <UserButton />
-                </>
-              )}
-              {!isAuthenticated && <SignInButton />}
-            </>
-          )}
-
           <MenuToggle toggle={toggleOpen} />
         </div>
       </div>

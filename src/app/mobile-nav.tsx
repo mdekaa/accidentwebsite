@@ -35,7 +35,6 @@ export default function MobileNav({
 }) {
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
-  const { signOut } = useClerk();
 
   return (
     <motion.nav
@@ -63,24 +62,11 @@ export default function MobileNav({
               onClick={() => toggleOpen()}
               className="flex w-full font-semibold capitalize mt-1"
             >
-              CandidatesShowdown
+              Opinion Polls Result
             </Link>
           </MenuItem>
-          <MenuItem className="my-3 h-px w-full bg-gray-300" />
 
 
-          <MenuItem key="SignOut">
-            <Link
-              href="/"
-              onClick={() => {
-                signOut();
-                toggleOpen();
-              }}
-              className="flex w-full font-semibold capitalize"
-            >
-              Sign Out
-            </Link>
-          </MenuItem>
         </div>
       </motion.ul>
     </motion.nav>

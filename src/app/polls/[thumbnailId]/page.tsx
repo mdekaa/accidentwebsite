@@ -116,7 +116,7 @@ function ThumbnailTestImage({
         </div>
       </div>
 
-      {!hasVoted && !isOwner && (
+      {/* {!hasVoted && !isOwner && (
         <Button
           onClick={() => handleVote(imageId)}
           size="lg"
@@ -125,17 +125,14 @@ function ThumbnailTestImage({
         >
           Vote
         </Button>
-      )}
+      )} */}
 
-      {(hasVoted || isOwner) && (
-        <>
           <Progress
             value={getVotePercent(thumbnail, imageId)}
             className="w-full bg-gray-200"
           />
           <div className="text-lg">{getVotesFor(thumbnail, imageId)} votes</div>
-        </>
-      )}
+      
     </div>
   );
 }
