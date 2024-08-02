@@ -85,12 +85,12 @@ export default function Home() {
           <span>Live</span>
         </div>
         {data ? (
-          <div className="lg:w-1/2 w-full space-y-2">
+          <div className="lg:w-1/2 w-full space-y-2 text-center">
             <span className="flex items-center justify-center text-2xl lg:text-4xl mb-4">
               General Secretary
             </span>
             <CandiCard imagesrc="/gs.jpg" />
-            <span className="flex justify-between">
+            <span className="flex justify-between text-lg">
               <div>Ashutosh K.</div>
               <div>Shashank D.</div>
             </span>
@@ -108,7 +108,7 @@ export default function Home() {
               General Secretary Technical
             </span>
             <CandiCard imagesrc="/gst.jpg" />
-            <span className="flex justify-between">
+            <span className="flex justify-between text-lg">
               <div>Abhishek R.</div>
               <div>Partha P.</div>
             </span>
@@ -128,7 +128,7 @@ export default function Home() {
             </span>
             <CandiCard imagesrc="/gsc.jpg" />
 
-            <span className="flex justify-between">
+            <span className="flex justify-between text-lg">
               <div>Lakshay P.</div>
               <div>Aryadeep G.</div>
             </span>
@@ -148,7 +148,7 @@ export default function Home() {
               General Secretary Sports
             </span>
             <CandiCard imagesrc="/gss.jpg" />
-            <span className="flex justify-between">
+            <span className="flex justify-between text-lg">
               <div>Md. Rebji A.</div>
               <div>M. Dhana N.</div>
             </span>
